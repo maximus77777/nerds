@@ -84,10 +84,10 @@
       </form>
     </section>
 
-    <section>
+    <section class="catalog">
       <h2>Каталог товаров</h2>
       <h3>Сортировать:</h3>
-      <ul>
+      <ul class="sort-list">
         <li>
           <a>По цене</a>
         </li>
@@ -104,13 +104,69 @@
           <a href="#">Стрелка вверх</a>
         </li>
       </ul>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="catalog-list">
+        <li>
+          <img src="" alt="Макет Sedona">
+          <section>
+            <h3><a href="#">Sedona</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+        <li>
+          <img src="" alt="Макет Pink">
+          <section>
+            <h3><a href="#">Pink APP</a></h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+        <li>
+          <img src="" alt="Макет Barbershop">
+          <section>
+            <h3><a href="#">Barbershop</a></h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+        <li>
+          <img src="" alt="Макет Mishka">
+          <section>
+            <h3><a href="#">Mishka</a></h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+        <li>
+          <img src="" alt="Макет A Plus">
+          <section>
+            <h3><a href="#">A Plus</a></h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+        <li>
+          <img src="" alt="Макет Кваст">
+          <section>
+            <h3><a href="#">Кваст</a></h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#">9900 РУБ.</a>
+          </section>
+        </li>
+      </ul>
+      <ul class="pagination">
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
       </ul>
     </section>
   </main>
@@ -154,5 +210,24 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
+  
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form action="#" method="get">
+      <p>
+        <Label for="login">Ваше имя:</Label>
+        <input type="text" name="login" id="login">
+      </p>
+      <p>
+        <Label for="email">Ваш Ваш e-mail:</Label>
+        <input type="text" name="email" id="email">
+      </p>
+      <p>
+        <Label for="text-email">Текст письма:</Label>
+        <input type="text" name="text-email" id="text-email">
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 </html>
