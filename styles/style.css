@@ -50,6 +50,8 @@ img {
 }
 
 .btn {
+  line-height: 18px;
+  font-weight: 500;
   color: var(--basic-white);
   text-transform: uppercase;
 
@@ -71,6 +73,7 @@ img {
 
 :root {
   --basic-black: #000000;
+  --btn-filter-opacity-black: rgba(0,0,0, 0.3);
   --light-black: #283136;
   --basic-white: #ffffff;
   --opacity-white: rgba(255,255,255, 0.3);
@@ -78,7 +81,7 @@ img {
   --dark-brown: #4d4d4d;
   --basic-grey: #a6a6a6;
   --light-grey: #e1e1e1;
-  --light-extra-light: #eeeeee;
+  --light-extra-grey: #eeeeee;
   --shadow-button-black: rgba(0,1,1, 0.1);
   --shadow-modal-black: rgba(0,1,1, 0.75);
   --basic-red: #fb565a;
@@ -103,7 +106,7 @@ img {
 /*Header*/
 
 .main-header {
-  background-color: var(--light-extra-light);
+  background-color: var(--light-extra-grey);
 }
 
 /*navigation*/
@@ -147,7 +150,7 @@ img {
 /*slider*/
 
 .Advertising-slider {
-  background-color: var(--light-extra-light);
+  background-color: var(--light-extra-grey);
 }
 
 .slogan {
@@ -241,6 +244,155 @@ img {
   opacity: 0.2;
 }
 
+/*page-inner*/
+
+.page-inner h1 {
+  font-size: 55px;
+  line-height:55px;
+  font-weight: 500;
+
+  color: var(--basic-black);
+  text-align: center;
+
+  background-color: var(--light-extra-grey);
+}
+
+/*filter*/
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter label {
+  line-height: 20px;
+}
+
+.filter .btn {
+  color: var(--basic-black);
+
+  background-color: var(--light-extra-grey);
+  border: none;
+}
+
+.filter .btn:hover {
+  background-color: var(--bg-filter-btn-dark-grey);
+}
+
+.filter .btn:active {
+  color: var(--btn-filter-opacity-black);
+  background-color: var(--bg-filter-btn-extra-grey);
+}
+
+/*complex-filter*/
+
+.complex-filter label {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.complex-filter input {
+  font: inherit;
+  border: none;
+  background-color: var(--light-extra-grey);
+  text-align: center;
+}
+
+/*catalog*/
+
+.catalog h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.sort-list a {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort-list a:hover {
+  opacity: 0.6;
+}
+
+.sort-list a:active,
+.sort-list a:focus {
+  opacity: 1;
+}
+
+.sort-list .active,
+.sort-list .active:hover {
+  opacity: 1;
+}
+
+.sort-list,
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list .btn {
+  color: var(--basic-white);
+}
+
+.catalog-list .title {
+  line-height: 30px;
+
+  color: var(--basic-black);
+}
+
+.catalog-list .title:hover {
+  color: var(--basic-red);
+}
+
+.catalog-list .title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-list p {
+  line-height: 18px;
+  color: var(--basic-brown);
+}
+
+/*pagination*/
+
+.pagination {
+  list-style: none;
+}
+
+.pagination .btn {
+  color: var(--basic-black);
+
+  background-color: var(--light-extra-grey);
+  border: none;
+}
+
+.pagination .btn:hover {
+  background-color: var(--bg-filter-btn-dark-grey);
+}
+
+.pagination .btn:active {
+  color: var(--btn-filter-opacity-black);
+  background-color: var(--bg-filter-btn-extra-grey);
+}
+
+.pagination .active {
+  background-color: var(--basic-white);
+}
+
+/*footer*/
+
 /*map contacts*/
 
 .contacts h3 {
@@ -318,7 +470,7 @@ img {
 
 .modal input::placeholder,
 .modal textarea::placeholder {
-  color: var(--dark-extra-black);
+  color: var(--dark-extra-grey);
   opacity: 0.5;
 }
 
