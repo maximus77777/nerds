@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проект нердс</title>
+
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -35,7 +36,7 @@
           </li>
         </ul>
         <div>
-          <a href="">Корзина</a>
+          <a href="blank.html">Корзина</a>
         </div>
       </nav>
     </header>
@@ -45,34 +46,34 @@
       <section class="Advertising-slider">
         <h2>Реклама</h2>
         <div class="slide-item">
-          <p>
+          <p class="slogan">
             Долго, дорого, скрупулезно.
           </p>
           <p>
             математически выверенный дизайн для вашего
             сайта или мобильного приложения.
           </p>
-          <a href="blank.html">Узнать больше</a>
+          <a class="btn" href="blank.html">Узнать больше</a>
         </div>
         <div class="slide-item">
-            <p>
+            <p class="slogan">
               Любим математику как никто другой
             </p>
             <p>
               Никакого креатива, только математические формулы
               для расчета идеальных пропорций.
             </p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="btn" href="blank.html">Узнать больше</a>
           </div>
           <div class="slide-item">
-            <p>
+            <p class="slogan">
               Только ночь, только хардкор
             </p>
             <p>
               Работать днем, как все? Мы против этого.
               Ближе к полуночи работа только начинается.
             </p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="btn" href="blank.html">Узнать больше</a>
           </div>
         <div>
           <button>Кнопка №1</button>
@@ -91,7 +92,7 @@
               Мир никогда не будет прежним
               после того как увидит ваш сайт
             </p>
-            <a href="blank.html">Заказать</a>
+            <a class="btn" href="blank.html">Заказать</a>
           </li>
           <li>
             <h3>Приложения</h3>
@@ -100,7 +101,7 @@
               Покорите топ-10 приложений в
               AppStore и Google Play
             </p>
-            <a href="blank.html">Заказать</a>
+            <a class="btn green-btn" href="blank.html">Заказать</a>
           </li>
           <li>
             <h3>Презентации</h3>
@@ -109,14 +110,14 @@
               Вы даже не подозреваете,
               насколько вы изумительны!
             </p>
-            <a href="blank.html">Заказать</a>
+            <a class="btn yellow-btn" href="blank.html">Заказать</a>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="info">
         <h2>Информация об дизайн-студии</h2>
-        <p>
+        <p class="slogan-info">
           Мы - маленькая, но гордая
           дизайн-студия из Краснодара.
         </p>
@@ -142,7 +143,7 @@
         </p>
         <dl>
           <dt>Уровень самоотдачи</dt>
-          <dd>146<sup>%</sup>sup></dd>
+          <dd>146<sup>%</sup></dd>
           <dt>Соблюдение сроков</dt>
           <dd>100<sup>%</sup></dd>
           <dt>Минимальная предоплата</dt>
@@ -188,21 +189,21 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          <a href="blank.html">Напишите нам</a>
+          <a class="btn" href="blank.html">Напишите нам</a>
         </div>
       </section>
 
       <section class="social">
         <h2>Социальные сети</h2>
-        <ul class="social-list">
+        <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a class="btn" href="#">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a class="btn" href="#">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a class="btn" href="#">Инстаграм</a>
           </li>
         </ul>
       </section>
@@ -218,18 +219,19 @@
       <form action="#" method="get">
         <p>
           <Label for="login">Ваше имя:</Label>
-          <input type="text" name="login" id="login">
+          <input type="text" name="login" id="login" placeholder="Имя Фамилия">
         </p>
         <p>
           <Label for="email">Ваш Ваш e-mail:</Label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" placeholder="email@example.com">
         </p>
         <p>
           <Label for="text-email">Текст письма:</Label>
-          <input type="text" name="text-email" id="text-email">
+          <textarea name="text-email" id="text-email" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="btn" type="submit">Отправить</button>
       </form>
+      <button class="close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+       url("../fonts/Roboto-Regular.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+       url("../fonts/Roboto-Medium.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+
+  src:
+  local("Roboto"),
+  local("Roboto"),
+   url("../fonts/Roboto-Bold.woff2") format("woff2"),
+       url("../fonts/Roboto-Bold.woff") format("woff");
+}
+
+
+.page-body {
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-black);
+}
+
+/*Global*/
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+  background-color: var(--basic-red);
+}
+
+.btn:hover {
+  background-color: var(--dark-red);
+}
+
+.btn:active {
+  color: var(--opacity-white);
+
+  background-color: var(--dark-extra-red);
+  box-shadow: inset 0 3px 0 var(--shadow-button-black);
+}
+
+/*Color*/
+
+:root {
+  --basic-black: #000000;
+  --light-black: #283136;
+  --basic-white: #ffffff;
+  --opacity-white: rgba(255,255,255, 0.3);
+  --basic-brown: #666666;
+  --dark-brown: #4d4d4d;
+  --basic-grey: #a6a6a6;
+  --light-grey: #e1e1e1;
+  --light-extra-light: #eeeeee;
+  --shadow-button-black: rgba(0,1,1, 0.1);
+  --shadow-modal-black: rgba(0,1,1, 0.75);
+  --basic-red: #fb565a;
+  --dark-red: #e74246;
+  --dark-extra-red: #d7373b;
+  --basic-green: #00ca74;
+  --dark-green: #00bc6c;
+  --dark-extra-green: #00aa62;
+  --basic-yellow: #efc84a;
+  --dark-yellow: #eab534;
+  --dark-extra-yellow: #e5a722;
+  --dark-extra-black: #444444;
+  --border-modal-form-grey: #d7dcde;
+  --border-modal-form-dark-grey: #b4b9bb;
+  --bg-filter-btn-dark-grey: #dfdfdf;
+  --bg-filter-btn-extra-grey: #d5d5d5;
+  --border-pagination-extra-dark-grey: #dbdbdb;
+  --arrow-bg-arrow-black: #231f20;
+  --btn-slider-active-brown: #c1c1c1;
+}
+
+/*Header*/
+
+.main-header {
+  background-color: var(--light-extra-light);
+}
+
+/*navigation*/
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: var(--basic-black);
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+  color: var(--basic-red);
+}
+
+.main-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.main-navigation a:focus {
+  color: var(--basic-black);
+}
+
+/*Логотип*/
+
+.main-logo:hover {
+  opacity: 0.8;
+}
+
+.main-logo:active {
+  opacity: 0.3;
+}
+
+/*main*/
+
+/*slider*/
+
+.Advertising-slider {
+  background-color: var(--light-extra-light);
+}
+
+.slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+/*Order*/
+
+.order ul {
+  list-style: none;
+}
+
+.order h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.order .green-btn {
+  background-color: var(--basic-green);
+}
+
+.order .green-btn:hover {
+  background-color: var(--dark-green);
+}
+
+.order .green-btn:active {
+  background-color: var(--dark-extra-green);
+}
+
+.order .yellow-btn {
+  background-color: var(--basic-yellow);
+}
+
+.order .yellow-btn:hover {
+  background-color: var(--dark-yellow);
+}
+
+.order .yellow-btn:active {
+  background-color: var(--dark-extra-yellow);
+}
+
+/*info*/
+
+.info .slogan-info {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.info h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.info ul {
+  list-style: none;
+}
+
+/*advantages*/
+
+.advantages p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages dd {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.advantages dt {
+  line-height: 18px;
+}
+
+/*logo-list*/
+
+.logo-list ul {
+  list-style: none;
+}
+
+.logo-list a {
+  opacity: 0.2;
+}
+
+/*map contacts*/
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.contacts p {
+  line-height: 18px;
+  color: var(--basic-brown);
+}
+
+.contacts a:nth-child(3) {
+  line-height: 18px;
+  color: var(--basic-brown);
+}
+
+/*social*/
+
+.social ul {
+  list-style: none;
+}
+
+.social a {
+  background-color: var(--light-grey);
+}
+
+/*discount*/
+
+.discount p {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.discount p:nth-child(2) {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--dark-extra-black);
+}
+
+/*modal*/
+
+.modal {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  box-shadow: 0 20px 40px 0px var(--shadow-modal-black);
+  margin-bottom: 40px;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.modal label {
+  line-height: 18px;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.modal input,
+.modal textarea {
+  font: inherit;
+  line-height: 18px;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: var(--dark-extra-black);
+  opacity: 0.5;
+}
+
+.modal .btn {
+  border: none;
+}
+
