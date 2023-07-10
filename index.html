@@ -17,8 +17,8 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a>
+      <nav class="main-navigation container">
+        <a class="logo-image">
           <img src="/img/nerds-logo.png" width="160" height="65" alt="Логотип">
         </a>
         <ul>
@@ -42,48 +42,50 @@
     </header>
 
     <main class="page-section">
-      <h1>Магазин Нердс дизайн студий</h1>
+      <h1 class="visually-hidden">Магазин Нердс дизайн студий</h1>
       <section class="Advertising-slider">
-        <h2>Реклама</h2>
-        <div class="slide-item">
-          <p class="slogan">
-            Долго, дорого, скрупулезно.
-          </p>
-          <p>
-            математически выверенный дизайн для вашего
-            сайта или мобильного приложения.
-          </p>
-          <a class="btn" href="blank.html">Узнать больше</a>
-        </div>
-        <div class="slide-item">
+        <h2 class="visually-hidden">Реклама</h2>
+        <div class="slider-grid container">
+          <div class="slide-item slide-active">
             <p class="slogan">
-              Любим математику как никто другой
+              Долго, дорого, скрупулезно.
             </p>
             <p>
-              Никакого креатива, только математические формулы
-              для расчета идеальных пропорций.
+              математически выверенный дизайн для вашего
+              сайта или мобильного приложения.
             </p>
             <a class="btn" href="blank.html">Узнать больше</a>
           </div>
           <div class="slide-item">
-            <p class="slogan">
-              Только ночь, только хардкор
-            </p>
-            <p>
-              Работать днем, как все? Мы против этого.
-              Ближе к полуночи работа только начинается.
-            </p>
-            <a class="btn" href="blank.html">Узнать больше</a>
+              <p class="slogan">
+                Любим математику как никто другой
+              </p>
+              <p>
+                Никакого креатива, только математические формулы
+                для расчета идеальных пропорций.
+              </p>
+              <a class="btn" href="blank.html">Узнать больше</a>
+            </div>
+            <div class="slide-item">
+              <p class="slogan">
+                Только ночь, только хардкор
+              </p>
+              <p>
+                Работать днем, как все? Мы против этого.
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a class="btn" href="blank.html">Узнать больше</a>
+            </div>
+            <div>
+              <button>Кнопка №1</button>
+              <button>Кнопка №2</button>
+              <button>Кнопка №3</button>
+            </div>
           </div>
-        <div>
-          <button>Кнопка №1</button>
-          <button>Кнопка №2</button>
-          <button>Кнопка №3</button>
-        </div>
       </section>
 
-      <section class="order">
-        <h2>Заказы</h2>
+      <section class="order container">
+        <h2 class="visually-hidden">Заказы</h2>
         <ul>
           <li>
             <h3>Веб-сайты</h3>
@@ -114,44 +116,45 @@
           </li>
         </ul>
       </section>
+      <div class="columns_info-advantages container">
+        <section class="info">
+          <h2 class="visually-hidden">Информация об дизайн-студии</h2>
+          <p class="slogan-info">
+            Мы - маленькая, но гордая
+            дизайн-студия из Краснодара.
+          </p>
+          <p>
+            Исповедуем принципы минимализма
+            и чистоты. Ставим математический
+            рачет превыше креатива. Работаем
+            не покладая рук, как роботы.
+          </p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
 
-      <section class="info">
-        <h2>Информация об дизайн-студии</h2>
-        <p class="slogan-info">
-          Мы - маленькая, но гордая
-          дизайн-студия из Краснодара.
-        </p>
-        <p>
-          Исповедуем принципы минимализма
-          и чистоты. Ставим математический
-          рачет превыше креатива. Работаем
-          не покладая рук, как роботы.
-        </p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <img src="../img/nerds-illustration.png" width="360" height="208" alt="Логотип">
+          <p>
+            C 2004 года любим точность во всем:
+          </p>
+          <dl>
+            <dt>Уровень самоотдачи</dt>
+            <dd>146<sup>%</sup></dd>
+            <dt>Соблюдение сроков</dt>
+            <dd>100<sup>%</sup></dd>
+            <dt>Минимальная предоплата</dt>
+            <dd>50<sup>%</sup></dd>
+          </dl>
+        </section>
+      </div>
 
-      <section class="advantages">
-        <h2>Преимущества</h2>
-        <img src="../img/nerds-illustration.png" width="360" height="208" alt="Логотип">
-        <p>
-          C 2004 года любим точность во всем:
-        </p>
-        <dl>
-          <dt>Уровень самоотдачи</dt>
-          <dd>146<sup>%</sup></dd>
-          <dt>Соблюдение сроков</dt>
-          <dd>100<sup>%</sup></dd>
-          <dt>Минимальная предоплата</dt>
-          <dd>50<sup>%</sup></dd>
-        </dl>
-      </section>
-
-      <section class="logo-list">
+      <section class="logo-list container">
         <ul>
           <li>
             <a href="#">
@@ -179,38 +182,40 @@
 
     <footer class="page-footer">
       <section class="map">
-        <h2>Карта</h2>
-        <img src="../img/map.png" width="1440" height="416" alt="Карта">
-        <img src="../img/map-marker.png" width="231" height="190" alt="Курсор карты">
-        <div class="contacts">
-          <h3>Nёrds design studio</h3>
-          <p>
-            191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-          <a class="btn" href="blank.html">Напишите нам</a>
+        <h2 class="visually-hidden">Карта</h2>
+        <img class="map-image" src="../img/map.png" width="1440" height="416" alt="Карта">
+        <div class="container">
+          <img class="marker-image" src="../img/map-marker.png" width="231" height="190" alt="Курсор карты">
+          <div class="contacts">
+            <h3>Nёrds design studio</h3>
+            <p>
+              191186, Санкт-Петербург,
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a class="btn" href="blank.html">Напишите нам</a>
+          </div>
         </div>
       </section>
-
-      <section class="social">
-        <h2>Социальные сети</h2>
-        <ul>
-          <li>
-            <a class="btn" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="btn" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="btn" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="discount">
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="grid-social_discount container">
+        <section class="social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li>
+              <a class="btn" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="btn" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="btn" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </section>
+        <div class="discount">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
 
