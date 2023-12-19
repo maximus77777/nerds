@@ -21,7 +21,7 @@
         <a class="logo-image">
           <img src="/img/nerds-logo.png" width="160" height="65" alt="Логотип">
         </a>
-        <ul>
+        <ul class="list-menu">
           <li>
             <a href="blank.html">Студия</a>
           </li>
@@ -35,53 +35,59 @@
             <a href="blank.html">Контакты</a>
           </li>
         </ul>
-        <div>
-          <a href="blank.html">Корзина</a>
+        <div class="wrapper-cart">
+          <a class="cart" href="blank.html">Корзина</a>
         </div>
       </nav>
     </header>
 
-    <main class="page-section">
+    <main class="main-page page-section">
       <h1 class="visually-hidden">Магазин Нердс дизайн студий</h1>
       <section class="Advertising-slider">
         <h2 class="visually-hidden">Реклама</h2>
-        <div class="slider-grid container">
+        <div class="slider_images slider_image-1 container">
           <div class="slide-item slide-active">
             <p class="slogan">
               Долго, дорого, скрупулезно.
             </p>
-            <p>
-              математически выверенный дизайн для вашего
+            <p class="slider-text">
+              Математически выверенный дизайн <br> для вашего
               сайта или мобильного приложения.
             </p>
             <a class="btn" href="blank.html">Узнать больше</a>
           </div>
           <div class="slide-item">
-              <p class="slogan">
-                Любим математику как никто другой
-              </p>
-              <p>
-                Никакого креатива, только математические формулы
-                для расчета идеальных пропорций.
-              </p>
-              <a class="btn" href="blank.html">Узнать больше</a>
-            </div>
-            <div class="slide-item">
-              <p class="slogan">
-                Только ночь, только хардкор
-              </p>
-              <p>
-                Работать днем, как все? Мы против этого.
-                Ближе к полуночи работа только начинается.
-              </p>
-              <a class="btn" href="blank.html">Узнать больше</a>
-            </div>
-            <div>
-              <button>Кнопка №1</button>
-              <button>Кнопка №2</button>
-              <button>Кнопка №3</button>
-            </div>
+            <p class="slogan">
+              Любим математику как никто другой
+            </p>
+            <p class="slider-text">
+              Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.
+            </p>
+            <a class="btn" href="blank.html">Узнать больше</a>
           </div>
+          <div class="slide-item">
+            <p class="slogan">
+              Только ночь, только хардкор
+            </p>
+            <p class="slider-text">
+              Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a class="btn" href="blank.html">Узнать больше</a>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn-active">
+              <span hidden>Кнопка №1</span>
+            </button>
+            <button>
+              <span hidden>Кнопка №2</span>
+            </button>
+            <button>
+              <span hidden>Кнопка №3</span>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="order container">
@@ -120,13 +126,13 @@
         <section class="info">
           <h2 class="visually-hidden">Информация об дизайн-студии</h2>
           <p class="slogan-info">
-            Мы - маленькая, но гордая
+            Мы &mdash; маленькая, но гордая
             дизайн-студия из Краснодара.
           </p>
           <p>
             Исповедуем принципы минимализма
             и чистоты. Ставим математический
-            рачет превыше креатива. Работаем
+            расчет превыше креатива. Работаем
             не покладая рук, как роботы.
           </p>
           <h3>Выполняем заказы на разработку:</h3>
@@ -155,6 +161,7 @@
       </div>
 
       <section class="logo-list container">
+        <h2 class="visually-hidden">Логотипы</h2>
         <ul>
           <li>
             <a href="#">
@@ -183,8 +190,9 @@
     <footer class="page-footer">
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map-image" src="../img/map.png" width="1440" height="416" alt="Карта">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603629617766!2d30.318176499439435!3d59.938719097417525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690547695666!5m2!1sru!2sru" width="800" height="416" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="container">
+         <img class="map-image" src="../img/map.png" width="1440" height="416" alt="Карта">
           <img class="marker-image" src="../img/map-marker.png" width="231" height="190" alt="Курсор карты">
           <div class="contacts">
             <h3>Nёrds design studio</h3>
@@ -192,7 +200,7 @@
               191186, Санкт-Петербург,
               ул. Б. Конюшенная, д. 19/8
             </p>
-            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             <a class="btn" href="blank.html">Напишите нам</a>
           </div>
         </div>
@@ -200,15 +208,21 @@
       <div class="grid-social_discount container">
         <section class="social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul>
-            <li>
-              <a class="btn" href="#">Вконтакте</a>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
-            <li>
-              <a class="btn" href="#">Фейсбук</a>
+            <li class="social-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
-            <li>
-              <a class="btn" href="#">Инстаграм</a>
+            <li class="social-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -219,7 +233,7 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal-show">
       <h2>Напишите нам</h2>
       <form action="#" method="get">
         <p>
@@ -227,16 +241,19 @@
           <input type="text" name="login" id="login" placeholder="Имя Фамилия">
         </p>
         <p>
-          <Label for="email">Ваш Ваш e-mail:</Label>
+          <Label for="email">Ваш e-mail:</Label>
           <input type="text" name="email" id="email" placeholder="email@example.com">
         </p>
         <p>
           <Label for="text-email">Текст письма:</Label>
-          <textarea name="text-email" id="text-email" placeholder="В свободной форме"></textarea>
+          <textarea name="text-email" id="text-email" placeholder="В свободной форме" ></textarea>
         </p>
         <button class="btn" type="submit">Отправить</button>
       </form>
-      <button class="close" type="button">Закрыть</button>
+      <button class="close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="#fb565a"><path class="cls-1" d="m20.72,17.89l-7.4-7.4,7.39-7.39c.36-.36.36-.94,0-1.3l-1.53-1.53c-.36-.36-.94-.36-1.3,0l-7.39,7.39L3.11.28c-.36-.36-.94-.36-1.3,0L.28,1.81c-.36.36-.36.94,0,1.3l7.38,7.38L.27,17.88c-.36.36-.36.94,0,1.3l1.53,1.53c.36.36.94.36,1.3,0l7.39-7.39,7.4,7.4c.36.36.94.36,1.3,0l1.53-1.53c.36-.36.36-.94,0-1.3Z"/></svg>
+      </button>
     </section>
   </body>
 </html>
